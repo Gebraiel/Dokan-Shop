@@ -1,0 +1,151 @@
+* {
+  font-family: "Poppins",sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style-type: none;
+  padding:0;
+}
+a{
+  text-decoration: none;
+}
+.container .title h1{
+  font-size:3rem;
+}
+.container .title p{
+  font-size:1.2rem;
+  color:#777;
+  letter-spacing: 4px;
+}
+nav{
+  z-index:5
+}
+.carousel-item,
+.carousel-inner {
+  height: 100%;
+}
+.carousel-caption {
+  z-index: 3;
+  bottom: 4rem;
+}
+.carousel-indicators [data-bs-target] {
+  width:15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+}
+.nav-pills li a{
+  color: white !important;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.nav-pills li a.active {
+    color: white !important;
+    background-color: #cd5c5c !important;
+}
+
+.nav-pills li a:hover {
+  color:white !important;
+  background-color: #cd5c5c;
+  text-transform: uppercase;
+}
+nav,.dropdown-menu {
+  background-color: #343a40;
+}
+.dropdown-menu li:hover a {
+  border-radius: 0px;
+  padding-left: 1.5rem;
+}
+
+.carousel-indicators .active{
+  background-color: #cd5c5c;
+}
+
+.card .icons i{
+  color:#a9a9a9 ;
+  font-size:20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card .icons i:hover{
+  color:#cd5c5c;
+}
+.card .card-text{
+  color:#777;
+}
+.card a.btn{
+  background-color: #cd5c5c;
+  color:white;
+}
+
+.deals .deal{
+  position: relative;
+}
+.deals .deal::after{
+  content:attr(hover-content);
+
+  position: absolute;
+  left:50%;
+  top:50%;
+  width: 75%;
+  height: 75%;
+  color:white;
+  font-size:2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) translate(-50%,-50%);
+  transform-origin: 0 0;
+  background-color: rgba(205,92,92,0.7);
+  transition:0.3s;
+}
+@media(max-width:325px){
+  .deals .deal::after{
+    font-size:1.5rem;
+  }
+}
+.deals .deal:hover::after{
+  transform: scale(1) translate(-50%,-50%);
+}
+
+form button{
+  background-color: #cd5c5c;
+  color:white;
+  border-radius: 5px;
+}
+.contact div{
+  text-align: center;
+}
+.contact h3{
+  color: #cd5c5c;
+  text-decoration: underline;
+}
+.contact p,.contact p a{
+  color:#777;
+}
+footer{
+  color:white;
+  background-color: #343a40;
+}
+
+footer a{
+  color:white;
+}
+footer .social ul li a i{
+  transition: 0.3s;
+}
+footer .social ul li a:hover .fa-facebook-f{
+  color:#1877f2;
+}
+footer .social ul li a:hover .fa-x-twitter{
+  color:black;
+}
+footer .social ul li a:hover .fa-youtube{
+  color:#ff0000;
+}
+footer .social ul li a:hover .fa-whatsapp{
+  color:#25d366;
+}
