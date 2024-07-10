@@ -7,6 +7,14 @@ html{
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+
+
 ul{
   list-style-type: none;
   padding:0;
@@ -25,7 +33,11 @@ a{
 nav{
   z-index:5
 }
-
+.navbar-toggler-icon{
+  background-image: none;
+  width: auto;
+  height: auto;
+}
 /*index page start*/
 .carousel-item,
 .carousel-inner {
@@ -138,19 +150,19 @@ footer{
 footer a{
   color:white;
 }
-footer .social ul li a i{
+.social ul li a i{
   transition: 0.3s;
 }
-footer .social ul li a:hover .fa-facebook-f{
+.social ul li a:hover .fa-facebook-f{
   color:#1877f2;
 }
-footer .social ul li a:hover .fa-x-twitter{
+.social ul li a:hover .fa-x-twitter{
   color:black;
 }
-footer .social ul li a:hover .fa-youtube{
+.social ul li a:hover .fa-youtube{
   color:#ff0000;
 }
-footer .social ul li a:hover .fa-whatsapp{
+.social ul li a:hover .fa-whatsapp{
   color:#25d366;
 }
 /*shop pages start*/
@@ -200,3 +212,50 @@ footer .social ul li a:hover .fa-whatsapp{
   display: none;
 }
 /*shop pages end*/
+
+/*about Page Start*/
+#about .social ul li a i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white ;
+  font-size: 1.5rem; 
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+}
+#about .social ul li a .fa-facebook-f{
+  background-color:#1877f2;
+}
+#about .social ul li a .fa-x-twitter{
+  background-color:black;
+}
+#about .social ul li a .fa-youtube{
+  background-color:#ff0000;
+}
+#about .social ul li a .fa-whatsapp{
+  background-color:#25d366;
+}
+#about .social ul li a:hover .fa-facebook-f{
+  background-color: transparent;
+  color:#1877f2;
+}
+#about .social ul li a:hover .fa-x-twitter{
+  background-color: transparent;
+  color:#000000;
+}
+#about .social ul li a:hover .fa-youtube{
+  background-color: transparent;
+  color:#ff0000;
+}
+#about .social ul li a:hover .fa-whatsapp{
+  background-color: transparent;
+  color:#25d366;
+}
+/*about Page End*/
+/*Login Page Start*/
+#login form{
+  background-color: #ccc;
+  max-width:500px;
+}
+/*Login Page End*/
